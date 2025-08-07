@@ -64,6 +64,7 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 
@@ -71,7 +72,7 @@
 .shorten-link-container{
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    margin-top: 200px;
     background-color: var(--Gray200);
     position: relative;
 }
@@ -115,6 +116,7 @@
     font-weight: 500;
     border-radius: 5px;
     background-color: var(--Blue400);
+    cursor: pointer;
 }
 
 .advanced-statistics{
@@ -133,7 +135,10 @@
 }
 
 .statistics-text{
-    color: var(--Gray900);
+    color: var(--Gray500);
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /* Cartas */
@@ -147,11 +152,24 @@
     position: relative;
     text-align: center;
     margin: 0 auto;
-    gap: 30px;
+    gap: 20px;
     padding: 50px 25px;
     margin-top: 100px;
     border-radius: 5px;
     background-color: white;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--Gray900);
+    margin-top: 20px;
+}
+
+.card-text{
+    color: var(--Gray500);
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .purple-circle{
@@ -159,6 +177,7 @@
     height: 100px;
     display: flex;
     justify-content: center;
+    text-align: center;
     border-radius: 50%;
     background-color: var(--Purple950);
     position: absolute;
@@ -172,10 +191,38 @@
     margin-top: 20px;   
 }
 
+.div-transparent-position{
+    width: 100%;
+    height: 170px;
+}
+
 .div-transparent{
     width: 100%;
     height: 100px;
 }
+/* Card Stick */
+.card-stick{
+    width: 10px;
+    height: 57px;
+    background-color: var(--Blue400);
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-stick-2{
+    width: 10px;
+    height: 59px;
+    background-color: var(--Blue400);
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*Boost*/
 .boost-container{
@@ -241,7 +288,6 @@
     text-align: center;
     align-self: center;
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .footer-title{
