@@ -1,17 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+:root{
+--Blue400: hsl(180, 66%, 49%);
+--Purple950: hsl(257, 27%, 26%);
+--Red400: hsl(0, 87%, 67%);
+--Gray400: hsl(0, 0%, 75%);
+--Gray500: hsl(257, 7%, 63%);
+--Gray900: hsl(255, 11%, 22%);
+--Gray950: hsl(260, 8%, 14%);
+}
 
 .nav-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
-    border: 1px solid red;
+    margin-top: 15px;
+    padding: 20px 30px;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -19,23 +31,38 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.header-description-title{
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .header-container-description{
     width: 100%;
-    height: 250px;
+    height: 300px;
     text-align: center;
     margin: 20px 0;
-    padding: 20px 70px;
-    border: 2px solid red;
+    padding: 20px 30px;
+}
+
+.header-description-text{
+    margin-top: 10px;
+    color: var(--Gray900);
 }
 
 .header-btn{
-    width: 60%;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 20px;
+    width: 50%;
+    height: 50px;
+    border-radius: 24px;
+    margin-top: 25px;
     border: none;
+    background-color: var(--Blue400);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -43,31 +70,66 @@
 .shorten-link-container{
     width: 100%;
     height: auto;
+    margin-top: 100px;
 }
 
 .link-container{
     width: 80%;
-    height: 130px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     margin: 0 auto;
-    border: 2px solid blue;
     background-color: hsl(0, 0%, 100%);
     padding: 10px 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    background-color: var(--Purple950);
+    background-image: url(/url-shortening-api-master/images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+
+}
+
+.link-container-input{
+    width: 100%;
+    height: 35%;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.link-container-btn{
+    width: 100%;
+    height: 35%;
+    color: white;
+    font-size: 19px;
+    border: noine;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--Blue400);
 }
 
 .advanced-statistics{
     width: 80%;
     height: auto;
     margin: 0 auto;
-    padding: 20px;
-    border: 2px solid green;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
+}
+
+.statistic-title{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--Gray900);
+}
+
+.statistics-text{
+    color: var(--Gray900);
 }
 
 /* Cartas */
@@ -81,6 +143,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 100px;
     gap: 20px;
     border: 1px solid gray;
 }
