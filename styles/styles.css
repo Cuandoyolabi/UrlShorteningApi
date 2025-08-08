@@ -156,7 +156,6 @@
     justify-content: center ;
     align-items: center;
     position: relative;
-    text-align: center;
     margin: 0 auto;
     gap: 20px;
     padding: 50px 25px;
@@ -303,6 +302,7 @@
 
 .footer-text{
     color: var(--Gray400);
+    cursor: pointer;
 }
 
 .footer-container-social{
@@ -316,6 +316,8 @@
     gap: 20px;
 }
 
+
+/* Media Queries */
 @media (min-width: 768px) {
 
     /* Header */
@@ -360,7 +362,22 @@
     }
 
     /* Advanced Statistics */
+    .advanced-statistics{
+        width: 40%;
+        height: 200px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
 
+    .statistic-title{
+        font-size: 40px;
+    }
+
+    .statistics-text{
+        font-size: 24px;
+    }
 
     /*Cards*/
     .cards-personalizes-container{
@@ -371,12 +388,16 @@
         align-items: center;
         gap: 50px;
         margin-top: 50px;
+        text-align: left;
     }
 
    .personalizes-cards{
         width: 420px;
         height: 320px;
         margin: 0px;
+        justify-content: center;
+        align-items: start;
+        padding-left: 40px;
    }
 
    .purple-circle{
@@ -386,25 +407,27 @@
         left: 10%;
    }
 
-   .card-title{
-        text-align: start;
-   }
-
-   .card-text{
-        text-align: left;
-   }
-
    .card1{
-    align-self: start;
+        align-self: start;
    }
 
    .card3{
-    align-self: end;
+        align-self: end;
    }
 
    /*Card Stick */
     .card-stick{
-        
+        width: 75px;
+        height: 10px;
+        left: 36%;
+        top: 59%;
+    }
+
+    .card-stick-2{
+        width: 89px;
+        height: 10px;
+        top: 70%;
+        left: 66%;
     }
 
     /* Boost */
@@ -428,5 +451,22 @@
     /* Footer */
     .footer-container{
         flex-direction: row;
+    }
+
+    .footer-shortly{
+        width: 40%;
+       padding-left: 100px;
+        align-self: start;
+    }
+
+    .footer-container-links{
+        width: 30%;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .footer-container-social{
+        width: 30%;
+        align-self: start;
     }
 }
