@@ -23,5 +23,3 @@ link__btn.addEventListener("click", () => {
     acortarUrl(valorUrl.value);
 
 })
-
-console.log(valorUrl);
