@@ -6,8 +6,6 @@ menuNav__btn.addEventListener("click",   () => {
     
 });
 
-
-
 const valorUrl = document.getElementById("link__input");
 const link__btn = document.getElementById("link__btn");
 
@@ -25,7 +23,7 @@ async function acortarUrl(url){
     const datos = await respuesta.json();
     console.log(datos);
 
-    //crearContenedorHistorial(url, datos);
+    crearContenedorHistorial(url, datos.result_url);
 
 };
 
