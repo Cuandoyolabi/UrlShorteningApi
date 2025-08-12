@@ -13,7 +13,7 @@
 --Red400: hsl(0, 87%, 67%);
 --Gray200: hsl(0, 7%, 91%);
 --Gray400: hsl(0, 0%, 75%);
---Gray500: hsl(257, 7%, 63%);
+--Gray500: hsl(252, 2%, 44%);
 --Gray900: hsl(255, 11%, 22%);
 --Gray950: hsl(260, 8%, 14%);
 }
@@ -90,7 +90,7 @@
 
 .header-description-text{
     margin-top: 10px;
-    color: var(--Gray900);
+    color: var(--Gray500);
 }
 
 .header-menu{
@@ -157,7 +157,7 @@
     height: 35%;
     color: white;
     font-size: 19px;
-    border: noine;
+    border: none;
     font-weight: 500;
     border-radius: 5px;
     background-color: var(--Blue400);
@@ -357,7 +357,7 @@
 
 
 /* Media Queries */
-@media (min-width: 808px) {
+@media (min-width: 800px) {
 
     /* Nav Container */
     .nav-container {
@@ -409,34 +409,30 @@
     .header-dividor{
         display: flex;
         flex-direction: row-reverse;
-        padding-left: 60px;
-        border: 10px solid yellow;
+        padding-left: 80px;
     }
 
     .header-img-container{
         width: 70%;
         height: 100%;
-        border: 10px solid green;
     }
 
     .header-img{
-        margin-left: 40%;
-        border: 10px solid gray;
+        margin-left: 20%;
     }
 
     .header-container-description{
-       width: 50%;
+        width: 60%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-       margin: 0;
-       padding: 0;
-       border: 10px solid blue;
+        margin: 0;
+        padding: 0;
     }
 
     .header-description-title{
-        font-size: 60px;
+        font-size: 80px;
         text-align: left;
     }
 
