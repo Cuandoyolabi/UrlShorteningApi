@@ -115,28 +115,45 @@
 /* Header menu toggle */
 .header-menu-toggle {
   width: 90%;
-  height: 250px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  gap: 25px;
+  border-radius: 18px;
+  margin: auto;
   background-color: var(--Purple950);
-  border: 10px solid red;
 }
 
 .header-menu-text {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 .header-menu-btn {
   width: 80%;
-  height: 30px;
+  height: 60px;
   color: white;
   font-weight: 700;
-  border-radius: 16px;
+  border-radius: 26px;
   border: none;
+  font-size: 20px;
   background-color: var(--Blue400);
+  cursor: pointer;
+}
+
+.header-menu-hr{
+  width: 80%;
+  height: 1px;
+  background-color: var(--Gray500);
 }
 
 /*Shorten Link Container */
