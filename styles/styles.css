@@ -73,8 +73,6 @@
     width: 600px;
     height: auto;
     margin-left: 3%;
-    overflow: hidden;
-
 }
 
 .header-description-title{
@@ -359,32 +357,32 @@
 
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 808px) {
 
     /* Nav Container */
     .nav-container {
         height: 150px;
         margin-top: 0px;
-        border: 10px solid red;
     }
 
     .nav-logo{
         width: 120px;
-        border: 10px solid green;
     }
 
     .nav-btn-login{
+        width: 125px;
         display: block;
     }
 
     .nav-login{
+        font-size: 16px;
         display: block;
     }
 
     .nav-dividor-left{
         width: 500px;
         height: 50px;
-        margin-left: 100px;
+        margin-left: 50px;
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -402,7 +400,8 @@
         height: 50px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 30px;
         align-items: center;
     }
 
@@ -410,27 +409,34 @@
     .header-dividor{
         display: flex;
         flex-direction: row-reverse;
-        padding: 20px 100px;
-        border: 10px solid blue;
+        padding-left: 60px;
+        border: 10px solid yellow;
     }
 
-    .header-img{    
-        width: 500px;
-        height: auto;
+    .header-img-container{
+        width: 70%;
+        height: 100%;
+        border: 10px solid green;
+    }
+
+    .header-img{
+        margin-left: 40%;
+        border: 10px solid gray;
     }
 
     .header-container-description{
-       width: 100%;
+       width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
        margin: 0;
        padding: 0;
+       border: 10px solid blue;
     }
 
     .header-description-title{
-        font-size: 50px;
+        font-size: 60px;
         text-align: left;
     }
 
@@ -443,13 +449,12 @@
     }
 
     .header-btn{
-        border: 10px solid yellow;
+        width: 35%;
     }
-
 
     /* Shorten Link Container */
     .link-container {
-        width: 70%;
+        width: 85%;
         height: 160px;
         padding: 10px 40px;
         flex-direction: row;
