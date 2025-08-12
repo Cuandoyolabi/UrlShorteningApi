@@ -1,10 +1,10 @@
-const header__menu = document.getElementById("header-menu-id");
+const menuNav__btn = document.getElementById("header-menu-id");
+const headerMenu = document.getElementById("header-menu-toggle");
+menuNav__btn.addEventListener("click",   () => {
 
-header__menu.addEventListener("click",   () => {
-
+    headerMenu.classList.toggle("active");
     
-
-})
+});
 
 
 
@@ -24,10 +24,10 @@ async function acortarUrl(url){
 
     const datos = await respuesta.json();
     console.log(datos);
-}
+};
 
 link__btn.addEventListener("click", () => {
     console.log(valorUrl.value)
     acortarUrl(valorUrl.value);
 
-})
+});

@@ -45,12 +45,20 @@
   cursor: pointer;
 }
 
+.nav-btn-login:hover{
+  background-color: rgba(29, 182, 179, 0.523);
+}
+
 .nav-login {
   display: none;
   font-size: 22px;
   font-weight: 500;
   color: var(--Gray500);
   cursor: pointer;
+}
+
+.nav-login:hover{
+  color: black;
 }
 
 .nav-feature,
@@ -61,6 +69,12 @@
   font-weight: 500;
   color: var(--Gray500);
   cursor: pointer;
+}
+
+.nav-feature:hover,
+.nav-princing:hover,
+.nav-resource:hover{
+  color: rgb(0, 0, 0);
 }
 
 /* Header Container */
@@ -116,7 +130,7 @@
 .header-menu-toggle {
   width: 90%;
   height: 400px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;  
@@ -129,6 +143,10 @@
   border-radius: 18px;
   margin: auto;
   background-color: var(--Purple950);
+}
+
+.header-menu-toggle.active{
+  display: flex;
 }
 
 .header-menu-text {
@@ -207,6 +225,20 @@
   cursor: pointer;
 }
 
+.link-container-btn:hover{
+  background-color: rgb(167, 244, 244);
+}
+
+/* Historial de Urls */
+.historial-container{
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  border: 10px solid red;
+}
+
+
+/* Mensaje de estadisticas */
 .advanced-statistics {
   width: 90%;
   height: auto;
@@ -287,28 +319,6 @@
   width: 100%;
   height: 100px;
 }
-/* Card Stick */
-.card-stick {
-  width: 10px;
-  height: 57px;
-  background-color: var(--Blue400);
-  position: absolute;
-  top: 46%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card-stick-2 {
-  width: 10px;
-  height: 59px;
-  background-color: var(--Blue400);
-  position: absolute;
-  top: 71%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /*Boost*/
 .boost-container {
@@ -342,6 +352,10 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.boost-btn:hover{
+  background-color: rgb(137, 247, 247);
 }
 
 /* Footer */
@@ -385,6 +399,10 @@
   cursor: pointer;
 }
 
+.footer-text:hover{
+  color: var(--Blue400);
+}
+
 .footer-container-social {
   width: 100%;
   height: 50px;
@@ -394,6 +412,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 /* Media Queries */
