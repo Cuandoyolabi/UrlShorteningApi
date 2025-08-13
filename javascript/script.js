@@ -75,7 +75,6 @@ function crearContenedorHistorial(urlCompleta, urlRecortada){
     contenedorUrlBtn.addEventListener("click", function() {
         copiarLink(urlRecortada, contenedorUrlBtn);
     });
-
 };
 
 
@@ -85,5 +84,4 @@ function copiarLink(url, Btn){
         //Aqui debe cambiar el contenido del bton
         Btn.textContent = "Copied!";
     });
-
 };

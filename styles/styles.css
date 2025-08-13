@@ -247,7 +247,10 @@
 
 .contenedorUrl{
   width: 90%;
-  height: 300px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   border-radius: 16px;
   padding: 10px 20px;
   margin: auto;
@@ -258,7 +261,7 @@
 
 .contenedorUrlInicial{
   font-size: 15px;
-  color: var(--Gray500);
+  color: var(--Gray900);
   padding: 20px 0px;
 }
 
