@@ -57,15 +57,13 @@ function crearContenedorHistorial(urlCompleta, urlRecortada){
     contenedorUrlFinal.textContent = urlRecortada;
     contenedorUrlBtn.textContent = "Copy";
 
-    contenedorUrlBtn.id = "buttonCopyUrl" + `${num}`;
-    contenedorUrlFinal.id = "urlCortada" + `${num}`;
+    contenedorUrlBtn.id = "buttonCopyUrl" + `${num + 1}`;
+    contenedorUrlFinal.id = "urlCortada" + `${num + 1}`;
     console.log(contenedorUrlBtn, contenedorUrlFinal)
     contenedorUrlFinal.href = urlRecortada;
 
-    console.log(num)
     //Suma el contador cada que un elemento es creado
     num += 1;
-    console.log(num)
 
     historial.appendChild(contenedorUrl);
     contenedorUrl.appendChild(contenedorUrlInicial);
@@ -73,11 +71,19 @@ function crearContenedorHistorial(urlCompleta, urlRecortada){
     contenedorUrl.appendChild(contenedorUrlFinal);
     contenedorUrl.appendChild(contenedorUrlBtn);
 
+    //Funcionalidad del boton que permite copiar el link
+    contenedorUrlBtn.addEventListener("click", function() {
+        copiarLink(urlRecortada, contenedorUrlBtn);
+    });
+
 };
 
 
-function agregarFuncionalidad(){
+function copiarLink(url, Btn){
 
+     navigator.clipboard.writeText(url).then(() => {
+        //Aqui debe cambiar el contenido del bton
+        Btn.textContent = "Copied!";
+    });
 
-
-}
+};
