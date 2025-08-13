@@ -83,5 +83,6 @@ function copiarLink(url, Btn){
      navigator.clipboard.writeText(url).then(() => {
         //Aqui debe cambiar el contenido del bton
         Btn.textContent = "Copied!";
+        Btn.classList.add("copied");
     });
 };

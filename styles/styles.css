@@ -615,6 +615,11 @@
     font-size: 14px;
   }
 
+  .copied{
+    background-color: var(--Purple950);
+  }
+
+
   .contenedorUrlBtn{
     max-width: 120px;
     height: 30px;
