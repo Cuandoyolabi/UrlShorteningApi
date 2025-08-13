@@ -36,12 +36,15 @@ link__btn.addEventListener("click", () => {
 /* Contenedor - Historial  */
 const historial = document.getElementById("historial-container-id");
 
+ //Se crea un contador basico
+let num = 0;
+
 function crearContenedorHistorial(urlCompleta, urlRecortada){
 
     const contenedorUrl = document.createElement("div");
     const contenedorUrlInicial = document.createElement("h1");
     const contenedorUrlSeparador = document.createElement("hr");
-    const contenedorUrlFinal = document.createElement("h1");
+    const contenedorUrlFinal = document.createElement("a");
     const contenedorUrlBtn = document.createElement("button");
     
     contenedorUrl.classList.add("contenedorUrl");
@@ -54,10 +57,27 @@ function crearContenedorHistorial(urlCompleta, urlRecortada){
     contenedorUrlFinal.textContent = urlRecortada;
     contenedorUrlBtn.textContent = "Copy";
 
+    contenedorUrlBtn.id = "buttonCopyUrl" + `${num}`;
+    contenedorUrlFinal.id = "urlCortada" + `${num}`;
+    console.log(contenedorUrlBtn, contenedorUrlFinal)
+    contenedorUrlFinal.href = urlRecortada;
+
+    console.log(num)
+    //Suma el contador cada que un elemento es creado
+    num += 1;
+    console.log(num)
+
     historial.appendChild(contenedorUrl);
     contenedorUrl.appendChild(contenedorUrlInicial);
     contenedorUrl.appendChild(contenedorUrlSeparador);
     contenedorUrl.appendChild(contenedorUrlFinal);
     contenedorUrl.appendChild(contenedorUrlBtn);
+
+};
+
+
+function agregarFuncionalidad(){
+
+
 
 }
